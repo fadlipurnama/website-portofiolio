@@ -5,6 +5,7 @@ import { NavLink } from "../atoms/NavLink"; // Pakai atom NavLink yang sudah ada
 import { usePathname } from "next/navigation";
 import { SocialLinks } from "./SocialLinks";
 import { Button } from "../atoms/Button";
+import Link from "next/link";
 
 export const MobileNav = ({ isOpen }: { isOpen: boolean }) => {
   const pathname = usePathname();
@@ -34,9 +35,14 @@ export const MobileNav = ({ isOpen }: { isOpen: boolean }) => {
           })}
         </nav>
         <div className="flex flex-col gap-4">
-          <SocialLinks gap="gap-4" iconSize="size-8" className=""/>
+          <SocialLinks gap="gap-4" iconSize="size-8" className="" />
           <Button size="md" variant="primary" className="w-full">
-            Get In Touch
+            <Link
+              href={"mailto:fadlypurnama@gmail.com"}
+              className="flex items-center gap-2"
+            >
+              Get In Touch
+            </Link>
           </Button>
         </div>
       </div>
