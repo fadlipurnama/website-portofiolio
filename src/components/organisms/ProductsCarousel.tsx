@@ -57,8 +57,6 @@ export default function ProductCarousel({
     setIsReady(true);
   }, []);
 
-  console.log(data);
-
   return (
     <section
       id="products-carousel"
