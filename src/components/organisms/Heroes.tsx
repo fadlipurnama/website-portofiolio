@@ -7,7 +7,7 @@ import Link from "next/link";
 function Heroes() {
   return (
     <section id="heroes" className="section-container">
-      <div className="grid mt-10  lg:mt-20 xl:mt-10 2xl:mt-0 lg:gap-x-10 xl:gap-x-20 grid-cols-12">
+      <div className="grid mt-10 lg:mt-20 xl:mt-10 2xl:mt-0 lg:gap-x-10 xl:gap-x-20 grid-cols-12">
         {/* Kolom Kiri */}
         <div className="col-span-12 lg:col-span-6 xl:col-span-7 gap-y-8 flex flex-col py-10 h-full order-2 lg:order-1">
           <h1 className="text-main-text text-3xl font-bold p-10 sr-only">

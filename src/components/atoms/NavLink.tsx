@@ -7,7 +7,7 @@ const VARIANTS = {
     active: "border-b-2 border-brand-green",
   },
   footer: {
-    base: " hover:text-brand-green font-medium tracking-widest",
+    base: "text-sm sm:text-base hover:text-brand-green font-medium tracking-widest",
     active: "font-semibold text-brand-green",
   },
   mobile: {

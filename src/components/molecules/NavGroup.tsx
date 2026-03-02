@@ -17,7 +17,7 @@ export const NavGroup = ({
 
   return (
     <nav
-      className={`flex items-center ${variant === "mobile" ? "flex-col" : ""} gap-4 h-fit ${className} ${className}`}
+      className={`flex flex-wrap justify-center items-center ${variant === "mobile" ? "flex-col" : ""} gap-4 h-fit ${className} ${className}`}
     >
       {menuItems.map((item) => {
         return (

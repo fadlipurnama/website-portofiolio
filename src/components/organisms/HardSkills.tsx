@@ -10,9 +10,9 @@ export const HardSkills = ({
   <section
     id="tools"
     aria-labelledby="hard-skill"
-    className="flex items-center justify-center overflow-hidden mb-32 bg-brand-linear w-full"
+    className="overflow-hidden mb-32 bg-brand-linear w-full"
   >
-    <div className="flex container flex-col lg:flex-row items-center justify-between gap-10 p-10 lg:p-16">
+    <div className="flex container mx-auto flex-col lg:flex-row items-center justify-between gap-10 p-10 lg:p-16">
       <div className="flex flex-col gap-5 w-full lg:w-160">
         <h2 id="hard-skill" className="text-brand-green2 font-bold text-4xl">
           Hard Skill

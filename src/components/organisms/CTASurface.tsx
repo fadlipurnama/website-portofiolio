@@ -9,7 +9,7 @@ function CTASurface() {
       aria-labelledby="cta-surface-heading"
       className="section-container"
     >
-      <div className=" flex items-center justify-between p-8 flex-col gap-5 lg:flex-row bg-linear-to-br from-brand-gray2 to-brand-black">
+      <div className="flex items-center justify-between p-8 flex-col gap-5 lg:flex-row bg-linear-to-br from-brand-gray2 to-brand-black">
         <h2 id="cta-surface-heading" className="text-2xl text-white font-bold">
           Interested working with me?
         </h2>

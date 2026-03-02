@@ -31,7 +31,7 @@ export const CertificateGallery = ({
     <section
       id="cert-gallery-section"
       aria-labelledby="certificate-gallery"
-      className="relative py-10 px-5 flex items-center justify-center "
+      className="relative overflow-x-hidden py-10 px-5 flex items-center justify-center "
     >
       <div className="absolute inset-0 z-0 after:content-[''] after:absolute after:inset-0 after:bg-linear-to-b after:from-[#3E3D3D]/60 after:to-[#343436]/80">
         <Image
