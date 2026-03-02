@@ -71,7 +71,7 @@ export const SocialLinks = ({
       {/* Logic Tampilkan CV */}
       {showCV && (
         <p className="flex gap-2 items-center text-sm font-medium">
-          <NavLink target="_blank" href="https://drive.google.com/file/d/1UInz5CJOk4VWhdQmrCdUU1vRrfYZBVlC/view?usp=sharing" variant="normal">
+          <NavLink target="_blank" href="https://drive.google.com/file/d/12SFqco_7efmM3UFLFmu0kYTu5f4pqRW8/view?usp=sharing" variant="normal">
             Download
           </NavLink>
           Curriculum Vitae
