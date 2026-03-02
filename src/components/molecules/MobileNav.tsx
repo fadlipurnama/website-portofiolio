@@ -12,11 +12,11 @@ export const MobileNav = ({ isOpen }: { isOpen: boolean }) => {
 
   return (
     <div
-      className={`absolute h-screen top-0 left-0 w-full bg-main-bg border-gray-100 pt-20 -z-10 transition-all duration-300 ease-in-out lg:hidden ${
+      className={`absolute top-0 left-0 w-full bg-main-bg border-gray-100 pt-20 -z-10 transition-all duration-300 ease-in-out lg:hidden ${
         isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
       }`}
     >
-      <div className="container flex flex-col justify-between h-full py-5 mx-auto px-6 lg:px-16">
+      <div className="container flex flex-col justify-between h-screen pb-24 mx-auto px-6 lg:px-16">
         <nav className="flex flex-col gap-5">
           {menuItems.map((item) => {
             const Icon = getMenuIcon(item.name);
