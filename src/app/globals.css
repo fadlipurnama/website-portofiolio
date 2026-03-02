@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
+@theme {
+  /* Variabel Utama (Berubah saat Dark Mode) */
+  --color-main-bg: var(--bg-color);
+  --color-main-text: var(--text-color);
+  /* --color-acc-gray: var(--gray-color); */
+
+  /* Variabel Statis (Tetap sama di Light/Dark) */
+  --color-brand-green: #628141;
+  /* Green */
+  --color-brand-green2: #8BAE66;
+  /* Green2 */
+  --color-brand-cream: #EBD5AB;
+  /* Cream */
+  --color-brand-gray: #E4E4E4;
+  /* Gray */
+  --color-brand-gray2: #45474B;
+  /*Gray2*/
+  --color-brand-black: #201F1F;
+  /* Black */
+
+
+  /* Variabel Background Gradiend */
+  --background-image-brand-linear: var(--brand-gradient);
+  --brand-gradient: linear-gradient(180deg, #3e3d3d 0%, #343436 100%); /* Gradient */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Mode Terang */
+  --bg-color: #FFFFFF;
+  /* White */
+  --text-color: #201F1F;
+  /* Black */
+  /* --gray-color: #E4E4E4;  Gray */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  /* Mode Gelap */
+  --bg-color: #201F1F;
+  /* Black */
+  --text-color: #E4E4E4;
+  /* Gray */
+  /* --gray-color: #201F1F;  Di dark mode, Gray beralih ke Gray2 agar terbaca */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .section-container {
+    @apply overflow-x-hidden px-6 lg:px-16 mb-20 container mx-auto bg-main-bg;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* @layer utilities {
+  .bg-cta-surface {
+    background-image: linear-gradient(180deg, #201F1F 0%, #151517 100%);
+  }
+ 
+} */
